@@ -56,7 +56,7 @@ void printCandy(double cost) { // header of printCandy method.
 
 		cin >> balance;
 
-		if(balance == 0.1 || balance == 0.5 || balance == 0.10 || balance == 0.25 || balance == 1.0) {
+		if(balance == 0.01 || balance == 0.05 || balance == 0.10 || balance == 0.25 || balance == 1.0) {
 			currentTotal += balance;
 		} else {
 			cout << "Invalid input - Insert real money. Try again!!!"
@@ -96,7 +96,7 @@ void userChoice(int selection) { // header of userChoice
 	myStringArray[1] = "M and M's";
 	myStringArray[2] = "Kitkat";
 	myStringArray[3] = "Hersheys";
-	myStringArray[4] = "Sweedish fish";
+	myStringArray[4] = "Swedish fish";
 
 
 
@@ -148,11 +148,11 @@ int main() { // start of main function.
 					"\n2 for M and M's"
 					"\n3 for Kitkat"
 					"\n4 for Hersheys"
-					"\n5 for Sweedish fish" << endl << endl;
+					"\n5 for Swedish fish" << endl << endl;
 
 	// Prompt users to make selection.
 
-	cout << "Enter selection here: " << endl;
+	cout << "Enter selection here: " \n << endl;
 
 	// System in selection
 
@@ -160,7 +160,7 @@ int main() { // start of main function.
 
 	// A message prints out what the number they selected.
 
-	cout << "\nYou selected candy number " << selection << endl;
+	cout << "You selected candy number " << selection << endl;
 
 	// A message prints out telling users the cost of the candy they selected.
 
